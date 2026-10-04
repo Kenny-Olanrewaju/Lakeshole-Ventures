@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lakeshole Ventures | Miira Wellness Products</title>
+<meta name="description" content="Lakeshole Ventures — authentic Miira wellness coffees, beauty and nutrition supplements delivered across Nigeria.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,600;0,800;1,600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<meta name="theme-color" content="#150e0a">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="alternate icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="blobs" aria-hidden="true"><span class="b1"></span><span class="b2"></span><span class="b3"></span><span class="b4"></span></div>
+<div class="progress" id="progress"></div>
+
+<header class="nav" id="nav">
+  <a href="#home" class="logo"><span class="logo-mark">L</span><span>Lakeshole <em>Ventures</em></span></a>
+  <nav class="links" id="links" aria-label="Main">
+    <a href="#about">About</a>
+    <a href="#match">Find Yours</a>
+    <a href="#products">Products</a>
+    <a href="#combo">Combo</a>
+    <a href="#why">Why Us</a>
+    <a href="#faq">FAQ</a>
+    <a href="#contact">Contact</a>
+    <a class="nav-cta" id="navCta" href="#" target="_blank" rel="noopener">Chat on WhatsApp</a>
+  </nav>
+  <button class="cart-btn" id="openCart" aria-label="Open cart">
+    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6h15l-1.5 9h-12z"/><path d="M6 6 5 3H2"/><circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/></svg>
+    <span class="count" id="cartCount">0</span>
+  </button>
+  <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="links"><span></span><span></span><span></span></button>
+</header>
+<div class="nav-overlay" id="navOverlay"></div>
+
+<main id="home">
+  <!-- HERO -->
+  <section class="hero">
+    <div class="sparks" id="sparks" aria-hidden="true"></div>
+    <div class="hero-glow" id="heroGlow" aria-hidden="true"></div>
+    <div class="hero-text">
+      <p class="eyebrow reveal">Authentic Miira Wellness</p>
+      <h1 class="reveal">Nourish yourself <br><span class="grad">from the inside out.</span></h1>
+      <p class="rotator reveal">Made for <span class="rot grad" id="rotWord">energy</span></p>
+      <p class="lead reveal">Premium wellness coffees, beauty and nutrition supplements. Eight Miira products, one trusted supplier — <strong>Lakeshole Ventures</strong>.</p>
+      <div class="cta reveal">
+        <a href="#products" class="btn primary">Shop Products</a>
+        <a href="#combo" class="btn ghost">See Combo Deal</a>
+      </div>
+      <div class="stats reveal">
+        <div><b data-count="8">0</b><span>Miira products</span></div>
+        <div><b data-count="6">0</b><span>Colour-coded ranges</span></div>
+        <div><b data-count="30000" data-prefix="₦">0</b><span>Prices from</span></div>
+      </div>
+    </div>
+
+    <div class="hero-visual" id="stage" aria-hidden="true">
+      <div class="pack hero-pack p-blue"   style="--r:-14deg;--x:-210px;--y:60px"><i>miiralife</i></div>
+      <div class="pack hero-pack p-green"  style="--r:-7deg;--x:-105px;--y:20px"><i>miira-phyll</i></div>
+      <div class="pack hero-pack p-red"    style="--r:0deg;--x:0px;--y:-10px;z-index:3"><i>miira-cell<sup>+</sup></i></div>
+      <div class="pack hero-pack p-pink"   style="--r:8deg;--x:105px;--y:20px"><i>miira Tiara</i></div>
+      <div class="pack hero-pack p-gold"   style="--r:15deg;--x:210px;--y:60px"><i>miira-wedok</i></div>
+      <div class="badge b-a">☕ Prices from <b>₦30,000</b></div>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee" aria-hidden="true">
+    <div class="track">
+      <span>Miira-Cell+</span><span>✦</span><span>Miira-Curve</span><span>✦</span><span>Miira-Life</span><span>✦</span><span>Miira-Phyll</span><span>✦</span><span>Miira-Wedok</span><span>✦</span><span>Miira-Lanang</span><span>✦</span><span>Miira Coffee</span><span>✦</span><span>Miira-Tiara</span><span>✦</span>
+      <span>Miira-Cell+</span><span>✦</span><span>Miira-Curve</span><span>✦</span><span>Miira-Life</span><span>✦</span><span>Miira-Phyll</span><span>✦</span><span>Miira-Wedok</span><span>✦</span><span>Miira-Lanang</span><span>✦</span><span>Miira Coffee</span><span>✦</span><span>Miira-Tiara</span><span>✦</span>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section class="section about" id="about">
+    <div class="wrap two">
+      <div class="reveal from-left">
+        <p class="eyebrow">About Lakeshole Ventures</p>
+        <h2>Wellness you can <span class="grad">taste, trust and enjoy.</span></h2>
+      </div>
+      <div class="reveal from-right">
+        <p>Lakeshole Ventures supplies the Miira range — a family of sachet-based wellness drinks and supplements from Revoobit, blending coffee, botanicals, collagen and nutrients into easy daily routines.</p>
+        <p>From a morning cup of Arabica coffee to a daily beauty sachet, every product is packed in its own signature colour so you can find what you need at a glance. Order in minutes, we handle the rest.</p>
+        <ul class="ticks">
+          <li>Convenient single-serve sachets</li>
+          <li>Coffees for him, for her and for everyone</li>
+          <li>Order straight to WhatsApp</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- FIND YOUR MATCH -->
+  <section class="section match" id="match">
+    <div class="wrap">
+      <div class="head center reveal">
+        <p class="eyebrow">Not sure where to start?</p>
+        <h2>Find your <span class="grad">Miira match</span></h2>
+        <p class="sub">Pick what matters most to you right now.</p>
+      </div>
+      <div class="goals reveal" id="goals"></div>
+      <div class="result" id="result" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <!-- PRODUCTS -->
+  <section class="section" id="products">
+    <div class="wrap">
+      <div class="head center reveal">
+        <p class="eyebrow">The Miira Collection</p>
+        <h2>Find your <span class="grad">perfect match</span></h2>
+        <p class="sub">Retail prices in Naira (₦). Open any card to view the product details.</p>
+      </div>
+      <div class="filters reveal" id="filters">
+        <button class="chip active" data-f="all">All</button>
+        <button class="chip" data-f="coffee">Coffees</button>
+        <button class="chip" data-f="wellness">Wellness</button>
+        <button class="chip" data-f="beauty">Beauty &amp; Weight</button>
+        <button class="chip" data-f="saved">♥ Saved <i id="savedCount"></i></button>
+      </div>
+      <div class="toolbar reveal">
+        <label class="search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input id="search" type="search" placeholder="Search: coffee, skin, detox, energy…" autocomplete="off" aria-label="Search products"></label>
+        <select id="sort" aria-label="Sort products">
+          <option value="default">Featured</option>
+          <option value="low">Price: low to high</option>
+          <option value="high">Price: high to low</option>
+        </select>
+      </div>
+      <div class="recent" id="recent" hidden></div>
+      <div class="grid" id="grid"></div>
+      <p class="none" id="none" hidden></p>
+      <p class="note">Miira products are food/wellness supplements and are not medicines. They are not intended to diagnose, treat, cure or prevent any disease. Results vary from person to person.</p>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="gallery" id="gallery" aria-label="Product gallery">
+    <div class="head center reveal">
+      <p class="eyebrow">Meet the range</p>
+      <h2>Colours that <span class="grad">catch the eye</span></h2>
+    </div>
+    <div class="g-track" id="gTrack"></div>
+  </section>
+
+  <!-- COMBO -->
+  <section class="section combo" id="combo">
+    <div class="wrap combo-card reveal zoom">
+      <div>
+        <p class="eyebrow">Best Value</p>
+        <h2>The Miira <span class="grad">Combo Pack</span></h2>
+        <p>Bundle your essentials and get the complete experience for one special price.</p>
+        <div class="combo-price" data-count="180000" data-prefix="₦">₦180,000</div>
+        <button class="btn primary" id="addCombo">Add Combo to Cart</button>
+      </div>
+      <div class="combo-fan" aria-hidden="true">
+        <div class="pack mini p-red"><i>cell+</i></div>
+        <div class="pack mini p-blue"><i>life</i></div>
+        <div class="pack mini p-green"><i>phyll</i></div>
+        <div class="pack mini p-gold"><i>wedok</i></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY -->
+  <section class="section" id="why">
+    <div class="wrap">
+      <div class="head center reveal">
+        <p class="eyebrow">Why Lakeshole</p>
+        <h2>Simple, <span class="grad">reliable, personal.</span></h2>
+      </div>
+      <div class="features">
+        <article class="feat reveal"><div class="ico">☕</div><h3>Ready-to-drink sachets</h3><p>Tear, pour, stir. Every Miira product fits into a busy day with zero fuss.</p></article>
+        <article class="feat reveal"><div class="ico">🎨</div><h3>Easy to recognise</h3><p>Each product has its own signature colour and packaging, making re-ordering effortless.</p></article>
+        <article class="feat reveal"><div class="ico">💬</div><h3>Order on WhatsApp</h3><p>Build your cart on this page and send it to us in one tap — no accounts, no forms.</p></article>
+        <article class="feat reveal"><div class="ico">🚚</div><h3>Nationwide delivery</h3><p>We arrange delivery across Nigeria. Confirm timing and cost with us when you order.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW -->
+  <section class="section how">
+    <div class="wrap">
+      <div class="head center reveal"><h2>Order in <span class="grad">3 easy steps</span></h2></div>
+      <div class="steps">
+        <div class="step reveal"><b>1</b><h3>Pick your products</h3><p>Browse the collection and add what you love to your cart.</p></div>
+        <div class="step reveal"><b>2</b><h3>Send on WhatsApp</h3><p>Your order summary is prepared automatically — just hit send.</p></div>
+        <div class="step reveal"><b>3</b><h3>Confirm &amp; receive</h3><p>We confirm payment and delivery details, then ship to you.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section" id="faq">
+    <div class="wrap narrow">
+      <div class="head center reveal"><p class="eyebrow">Questions</p><h2>Good to <span class="grad">know</span></h2></div>
+      <details class="reveal"><summary>Are Miira products medicines?</summary><p>No. They are wellness supplements and drinks. They are not medicines and are not meant to diagnose, treat or cure any condition. If you are unwell, pregnant, nursing or on medication, speak to your doctor before use.</p></details>
+      <details class="reveal"><summary>How do I use them?</summary><p>Most Miira products come as sachets that you mix with water or hot water as directed on the pack. Always follow the directions printed on your product.</p></details>
+      <details class="reveal"><summary>Can I take more than one product?</summary><p>Miira products are designed to work alongside each other. The manufacturer suggests leaving a gap between different products, so check the pack or ask us for guidance.</p></details>
+      <details class="reveal"><summary>How do I pay?</summary><p>After you send your order on WhatsApp we will confirm the total, payment method and delivery details with you directly.</p></details>
+      <details class="reveal"><summary>Can I save products for later?</summary><p>Yes. Tap the heart on any product card to save it, then use the "Saved" filter to see your picks. Saved items stay on this device.</p></details>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section contact" id="contact">
+    <div class="wrap contact-card reveal zoom">
+      <h2>Ready to feel <span class="grad">your best?</span></h2>
+      <p>Tell us what you need — we reply quickly.</p>
+      <div class="cta center">
+        <a class="btn primary" id="waLink" href="#" target="_blank" rel="noopener">Chat on WhatsApp</a>
+        <a class="btn ghost" href="#products">Browse Products</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap foot">
+    <div class="logo"><span class="logo-mark">L</span><span>Lakeshole <em>Ventures</em></span></div>
+    <nav class="foot-links"><a href="#about">About</a><a href="#match">Find Yours</a><a href="#products">Products</a><a href="#combo">Combo</a><a href="#faq">FAQ</a><a href="#contact">Contact</a></nav>
+    <p>© <span id="year"></span> Lakeshole Ventures. All rights reserved. Miira is a product range of Revoobit. Lakeshole Ventures is an independent supplier.</p>
+  </div>
+</footer>
+
+<!-- Product modal -->
+<div class="modal" id="modal" aria-hidden="true">
+  <div class="modal-box">
+    <button class="close" id="closeModal" aria-label="Close">×</button>
+    <div class="modal-body" id="modalBody"></div>
+    <div class="m-nav"><button id="mPrev" aria-label="Previous product">← Previous</button><span id="mCount"></span><button id="mNext" aria-label="Next product">Next →</button></div>
+  </div>
+</div>
+
+<!-- Cart drawer -->
+<aside class="drawer" id="drawer" aria-hidden="true">
+  <div class="drawer-head"><h3>Your Cart</h3><button class="close" id="closeCart" aria-label="Close">×</button></div>
+  <div class="drawer-items" id="cartItems"></div>
+  <div class="suggest" id="suggest" hidden></div>
+  <div class="drawer-foot">
+    <div class="total"><span>Total</span><b id="cartTotal">₦0</b></div>
+    <button class="btn primary full" id="checkout">Send Order on WhatsApp</button>
+    <button class="btn ghost full" id="clearCart">Clear cart</button>
+  </div>
+</aside>
+<div class="overlay" id="overlay"></div>
+<div class="toast" id="toast"></div>
+<nav class="dots" id="dots" aria-label="Page sections"></nav>
+<a class="fab" id="fab" href="#" target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 20.5l1.7-5.4A8.5 8.5 0 1 1 21 11.5z"/><path d="M8.5 10h7M8.5 13h4.5"/></svg></a>
+<button class="totop" id="toTop" aria-label="Back to top"><svg class="tt-ring" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="22"/></svg><span>↑</span></button>
+
+<script src="script.js" defer></script>
+</body>
+</html>
