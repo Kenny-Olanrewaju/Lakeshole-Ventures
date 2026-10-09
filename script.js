@@ -502,3 +502,27 @@ $("#navCta").href = $("#fab").href;
 
 renderGrid(); renderGoals(); renderGallery(); renderRecent(); renderCart(); updateSavedCount();
 $("#result").innerHTML = '<p class="r-hint">Tap a goal above and we\'ll suggest where to start.</p>';
+
+
+/* FAQ: smooth height drop-down */
+$$("details.faq-item").forEach(d => {
+  const box = d.querySelector(".faq-a");
+  let anim = null;
+  const finish = open => { d.classList.remove("closing"); d.open = open; box.style.height = ""; anim = null; };
+  d.querySelector("summary").addEventListener("click", e => {
+    e.preventDefault();
+    const opening = !d.open || d.classList.contains("closing");
+    if (reduceMotion || !box.animate) { d.open = opening; d.classList.remove("closing"); return; }
+    const from = anim ? box.getBoundingClientRect().height : (d.open ? box.offsetHeight : 0);
+    if (anim) anim.cancel();
+    if (opening) { d.classList.remove("closing"); d.open = true; }
+    else d.classList.add("closing");
+    const to = opening ? box.scrollHeight : 0;
+    box.style.height = from + "px";
+    anim = box.animate({ height: [from + "px", to + "px"] }, { duration: opening ? 420 : 320, easing: "cubic-bezier(.4,0,.2,1)" });
+    box.style.height = to + "px";
+    const a = anim;
+    a.onfinish = () => { if (anim === a) finish(opening); };
+    a.oncancel = () => {};
+  });
+});
